@@ -1,0 +1,98 @@
+{
+  "title": "personalWebData",
+  "author": "bob",
+  "date": "2017-07-09",
+  "vitae": [
+    {
+      "titleName": "个人信息",
+      "personImg": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/personalPic.jpg",
+      "name": "王之",
+      "sex": "男",
+      "birthDay": "1991-04-25",
+      "city": "上海",
+      "jobYear": 2,
+      "mail": "bob_1991@qq.com",
+      "phone": "180-1718-7988",
+      "qq": 475239144,
+      "money": 7000,
+      "personWebLink": "https://github.com/bobwang1991/gitPersonalWeb",
+      "height": 176
+    },
+    {
+      "titleName": "自我评价",
+      "contentArr": "1、对人诚恳，诚实 <br/>2、能和同事和睦相处 <br/>3、能不断学习新的知识，学习能力强。对最新的技术非常感兴趣，能够学习和跟踪。<br/>4、能独立及时完成公司布置的任务。<br/>5、能吃苦耐劳。<br/><br/><br/>能制作前端PC和H5的网站开发还可以制作小程序开发，还会一点node，vue，react等内容"
+    },
+    {
+      "titleName": "求职意向",
+      "workTime": "立即",
+      "workType": "全职",
+      "hopeJob": "互联网/web前端页面制作",
+      "city": "上海",
+      "hopeMoney": "8000-9999",
+      "workThink": "Web前端开发；网络工程师；特效设计师；微信小程序工程师",
+      "stateJob": "目前正在找工作，可随时上岗"
+    },
+    {
+      "titleName": "工作经验",
+      "jobExpress": [
+        {
+          "workTime": "2016/4 -- 2017/6",
+          "companyName": "上海民实传媒有限公司",
+          "companyType": "民营 / 少于50人",
+          "companyDesc": "负责前端网页设计开发"
+        },
+        {
+          "workTime": "2015/9 -- 2016/3",
+          "companyName": "前锦网络信息技术（上海）有限公司",
+          "companyType": "上市公司 / 10000人以上",
+          "companyDesc": "在前程无忧一年内，制作了中国平安招聘、中国电信招聘、如新大中华招聘、招商银行H5手机平台等"
+        }
+      ]
+    },
+    {
+      "titleName": "教育经历",
+      "jobExpress": [
+        {
+          "workTime": "2009/9 -- 2011/3",
+          "companyName": "Athlone Institute of Technology（因语言和学科太难而回国）",
+          "companyDesc": "毒物学，生物化学等等"
+        },
+        {
+          "workTime": "2015/1 -- 2017/6",
+          "companyName": "上海交通大学继续教育网络学院（本科）",
+          "companyDesc": "网络信息与安全、应用软件开发C++、程序设计C、面向对象程序设计（Java)等"
+        },
+        {
+          "workTime": "2015/9 -- 2016/3",
+          "companyName": "上海交通大学继续教育网络学院（大专）",
+          "companyDesc": "C语言基础、计算机基础与应用、网络基础与应用、C语言开发基础等"
+        }
+      ]
+    },
+    {
+      "titleName": "培训经历",
+      "jobExpress": [
+        {
+          "workTime": "2011/4 -- 2014/9",
+          "companyName": "汇众教育",
+          "companyDesc": "动漫，影视。学会了AE、Maya、3d-max等等"
+        },
+        {
+          "workTime": "2015/8 -- 2015/9",
+          "companyName": "天斯VIP",
+          "companyDesc": "web前端、HTML、HTML5、CSS、CSS3、Jquery"
+        },
+        {
+          "workTime": "2016/4 -- 2016/10",
+          "companyName": "潭州教育（网络）",
+          "companyDesc": "div和css、原生js和jq、html5、bootstraps"
+        },
+        {
+          "workTime": "2017/1 -- 至今",
+          "companyName": "潭州教育（网络）",
+          "companyDesc": "微信小程序 / 全栈框架（nodejs,react/react-nartive/vue等）（现在正在专研）"
+        }
+      ]
+    }
+  ]
+}

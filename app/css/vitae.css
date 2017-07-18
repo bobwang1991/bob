@@ -1,0 +1,139 @@
+@charset "UTF-8";
+.vitae {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background: #fff;
+}
+.vitae .box {
+    width: 855px;
+    margin: 0 auto;
+}
+.vitae .title {
+    width: 815px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #578cfa;
+    text-shadow: 2px 0 #999, 0 2px #999, -2px 0 #e8e8e8, 0 -2px #e8e8e8;
+    margin-bottom: 30px;
+}
+.vitae .personalPic {
+    width: 222px;
+    height: 316px;
+    margin: 0 86px 0 34px;
+    box-shadow: 0 0 10px #00f1ca;
+    overflow: hidden;
+    transform-origin: 50% 50%;
+    transition: transform .5s;
+}
+/*个人信息*/
+.vitae .personalInfo {
+    width: 500px;
+}
+.vitae .personalInfo .pInfo-title {
+    font-size: 20px;
+}
+.vitae .personalInfo dl.pInfo-con {
+    width: 245px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.vitae .personalInfo dl.pInfo-con dt {
+    float: left;
+    width: 80px;
+    text-align: right;
+    line-height: 40px;
+}
+.vitae .personalInfo dl.pInfo-con dd {
+    float: left;
+    line-height: 40px;
+}
+.vitae .personalInfo dl.pInfo-con dd a {
+    color: #000;
+}
+.vitae .personalInfo dl.long {
+    width: 450px;
+    margin-right: 50px;
+}
+
+.vitae .jobInfo {
+    padding-left: 50px;
+}
+.vitae .jobInfo > div {
+    margin-top: 20px;
+}
+/*自我评价*/
+.vitae .personalAppraisal {
+
+}
+.vitae .personalAppraisal .pA-title {
+    font-size: 20px;
+}
+.vitae .personalAppraisal .pA-con {
+    line-height: 30px;
+    padding: 0 290px 10px 40px;
+}
+
+/*求职意向*/
+.vitae .jobIntension {
+
+}
+.vitae .jobIntension .job-title {
+    font-size: 20px;
+}
+.vitae .jobIntension .job-con {
+    /*padding: 0 430px 20px 0;*/
+    padding: 0 310px 20px 0;
+}
+.vitae .jobIntension .job-con dl {
+    line-height: 30px;
+    font-size: 14px;
+}
+.vitae .jobIntension .job-con dl dt {
+    float: left;
+}
+.vitae .jobIntension .job-con dl dd {
+    float: left;
+}
+
+/*工作经验*/
+.vitae .jobExperience {
+}
+.vitae .jobExperience .experience-title {
+    font-size: 20px;
+}
+.vitae .jobExperience .experience-con {
+    padding-bottom: 10px;
+}
+.vitae .jobExperience .experience-con .work {
+    width: 304px;
+    margin: 20px 10px 0 61px;
+}
+.vitae .jobExperience .experience-con dl {
+    line-height: 30px;
+}
+.vitae .jobExperience .experience-con dl dt {
+    float: left;
+}
+.vitae .jobExperience .experience-con dl dd {
+    float: left;
+}
+
+/*技能掌握程度饼图*/
+#chart {
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #aaa;
+    margin: 32px 120px;
+    background: white;
+}
+
+/*公共部分*/
+.colorTxt {
+    color: #f21f03;
+    font-weight: bolder;
+    text-shadow: 1px 0 #999, 0 1px #999, -1px 0 #e8e8e8, 0 -1px #e8e8e8;
+}
+.border {
+    border-bottom: 1px solid #61e698;
+}

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*第一屏轮播图*/
+#banner {
+    position: relative;
+    width: 100%;
+    margin-bottom: 36px;
+}
+#banner .pic {
+    width: 100%;
+    overflow: hidden;
+}
+#banner .pic ul {
+    width: 1000%;
+}
+#banner .pic ul li {
+    float: left;
+    width: 10%;
+}
+#banner .pic ul li img {
+    width: 100%;
+}
+#banner .tab {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 175px;
+    height: 15px;
+}
+#banner .tab li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: #999;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+#banner .tab li.on {
+    background: #f60;
+}
+#banner .tab li:hover {
+    background: #f60;
+}
+#banner .btn div {
+    position: absolute;
+    top:calc(50% - 85px);
+    width: 68px;
+    height: 170px;
+    font-size: 40px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    line-height: 170px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#banner .btn div:hover {
+    background: rgba(0, 0, 0, .9);
+}
+#banner .btn .prev {
+    left: 0;
+}
+#banner .btn .next {
+    right: 0;
+}
+
+/*第二屏轮播--PC版个人作品*/
+#personProductWeb,#personProductVideo {
+    width: 100%;
+    height: 686px;
+    background: #ffffff;
+    margin-bottom: 36px;
+}
+.title {
+    padding-top: 10px;
+    margin-bottom: 46px;
+}
+.title h2 {
+    float: left;
+    font-size: 22px;
+    color: #fb5af1;
+    text-shadow: 1px 0 #999, 0 1px #999, -1px 0 #e8e8e8, 0 -1px #e8e8e8;
+}
+.title a.more {
+    float: right;
+    line-height: 27px;
+    margin-top: 3px;
+    width: 50px;
+    text-align: center;
+    background: #fa4114;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #000;
+    text-shadow: 1px 0 #999, 0 1px #999, -1px 0 #e8e8e8, 0 -1px #e8e8e8;
+}
+/*轮播*/
+.bannerProduct, #productVideo {
+    position: relative;
+    width: 100%;
+    height: 602px;
+}
+.bannerProduct .pic {
+    width: 100%;
+    height: 524px;
+    overflow: hidden;
+}
+.bannerProduct .pic ul {
+    width: 1000%;
+}
+.bannerProduct .pic li {
+    float: left;
+    margin-right: 57px;
+    border: 1px solid #461017;
+    box-shadow: 0 2px 5px #000;
+}
+.bannerProduct .tab {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 105px;
+    height: 15px;
+}
+.bannerProduct .tab li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: #999;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.bannerProduct .tab li.on {
+    background: #f60;
+}
+.bannerProduct .tab li:hover {
+    background: #f60;
+}
+
+/*第三屏轮播--AE特效个人作品*/
+#personProductVideo .title h2 {
+    color: #1291dc;
+}
+#personProductVideo .title a.more {
+    background: #cb30ff;
+}
+
+/*第四屏个人简历*/
+#personForm {
+    height: 430px;
+    background: #ffffff;
+    margin-bottom: 36px;
+    padding-bottom: 50px;
+}
+#personForm .title h2 {
+    line-height: 38px;
+    color: #35f56f;
+}
+#personForm .title a.more {
+    width: 100px;
+    line-height: 33px;
+    font-size: 18px;
+    background: #fee114;
+    box-shadow: 0 1px 3px #351915;
+}
+#personForm .personForm-content {
+    height: 316px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #aaa;
+    padding: 10px 0;
+}
+#personForm .personForm-content dl dt {
+    float: left;
+    width: 222px;
+    height: 316px;
+    margin: 0 86px 0 34px;
+    box-shadow: 0 0 10px #00f1ca;
+    overflow: hidden;
+    transform-origin: 50% 50%;
+    transition: transform .5s;
+}
+#personForm .personForm-content dl dt:hover > img {
+    transform: scale(1.2, 1.2);
+}
+#personForm .personForm-content dl dd {
+    float: left;
+    width: 938px;
+    margin-top: 20px;
+}
+#personForm .personForm-content dl dd p.name {
+    font-size: 18px;
+    line-height: 30px;
+}
+#personForm .personForm-content dl dd p.personal {
+    padding-left: 70px;
+    line-height: 25px;
+}

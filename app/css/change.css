@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.blackShadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+	filter: Alpha(opacity=70);
+    display: none;
+}
+.popUp {
+    position: fixed;
+    padding: 100px 50px;
+    background: pink;
+    font-size: 30px;
+    color: #f60;
+    font-weight: bolder;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #020bff;
+    text-shadow: 2px 0 #999, 0 2px #999, -2px 0 #e8e8e8, 0 -2px #e8e8e8;
+    display: none;
+}
+.popUp i {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    line-height: normal;
+    cursor: pointer;
+}

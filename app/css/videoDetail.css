@@ -1,0 +1,38 @@
+@charset "UTF-8";
+#main .videoCon {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px 0;
+}
+#main .videoCon .left {
+    width: 900px;
+    margin-top: 7px;
+    margin-left: 20px;
+    padding-bottom: 140px;
+    box-shadow: 0 0 10px #aaa;
+}
+#main .videoCon .left .title h2 {
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 60px;
+    text-indent: 20px;
+    color: #f24726;
+}
+#main .videoCon .left .title span {
+    float: right;
+    line-height: 60px;
+    font-size: 16px;
+    margin-right: 20px;
+    color: #aaa;
+}
+#main .videoCon .left .video {
+    text-align: center;
+}
+iframe {
+    width: 360px;
+    border: none;
+    float: right;
+    height: 640px;
+}

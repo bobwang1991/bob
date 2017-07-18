@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.center .list {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 30px 0;
+}
+.moreList{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.moreList .titleHead {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: #ff6600;
+}
+.moreList .moreContent li {
+    float: left;
+    margin: 20px;
+    box-shadow: 0 0 10px #000;
+    border: 1px solid blue;
+}
+.moreList .moreContent li img{
+    width: 200px;
+}
