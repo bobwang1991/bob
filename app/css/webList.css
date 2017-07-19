@@ -31,6 +31,7 @@
 }
 .moreList .moreContent dl dt img{
     width: 200px;
+    height: 270px;
     border: 2px solid #c19566;
     border-radius: 5px;
 }
@@ -39,9 +40,12 @@
     width: 350px;
 }
 .moreList .moreContent dl dd .title {
-    font-size: 30px;
+    font-size: 24px;
     color: #f60;
     margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .moreList .moreContent dl dd .authorTime {
     font-size: 12px;
@@ -71,4 +75,5 @@
     border-radius: 20px;
     box-shadow: 0 0 5px #000;
     text-shadow: 0 0 10px #000;
+    margin-top: 20px;
 }

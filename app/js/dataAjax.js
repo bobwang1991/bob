@@ -1,10 +1,25 @@
+var URL = 'data/data.json';
 function homeData() {
     $.ajax({
         type: 'GET',
-        url: 'data/data.json',
+        url: URL,
         dataType: 'json',
         success: function (data) {
+            var webList = data.webList;
             var vitae = data.vitae;
+            for (var i in webList) {
+                console.log(webList[i]);
+                var webListHtml = '';
+                webListHtml +=
+                    '<ul>' +
+                        '<li><a target="_blank" href="'+webList[0].link+'"><img src="'+webList[0].img+'" alt=""></a></li>'+
+                        '<li><a target="_blank" href="'+webList[1].link+'"><img src="'+webList[1].img+'" alt=""></a></li>'+
+                        '<li><a target="_blank" href="'+webList[2].link+'"><img src="'+webList[2].img+'" alt=""></a></li>'+
+                        '<li><a target="_blank" href="'+webList[3].link+'"><img src="'+webList[3].img+'" alt=""></a></li>'+
+                        '<li><a target="_blank" href="'+webList[4].link+'"><img src="'+webList[4].img+'" alt=""></a></li>'+
+                    '</ul>';
+                $('#webList').html(webListHtml);
+            }
             for (var i in vitae) {
                 var personHtml = '';
                 personHtml +=
@@ -27,7 +42,7 @@ function homeData() {
 }
 function vitaeData() {
     $.ajax({
-        url: 'data/data.json',
+        url: URL,
         type: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -214,6 +229,33 @@ function vitaeData() {
         },
         error: function () {
             alert('数据获取失败！请放入服务器内使用或者到网速好的地方使用！谢谢！');
+        }
+    });
+}
+function webList() {
+    $.ajax({
+        type: 'GET',
+        url: URL,
+        dataType: 'json',
+        success: function (data) {
+            var webList = data.webList;
+            var moreContentHtml = '';
+            for (var i in webList) {
+                moreContentHtml +=
+                    '<dl>'+
+                    '<dt><img src="'+webList[i].img+'" alt=""></dt>'+
+                    '<dd>'+
+                    '<div class="title">'+webList[i].title+'</div>'+
+                    '<div class="authorTime clearfix">'+
+                    '<p class="author fl">'+webList[i].author+'</p>'+
+                    '<p class="time fr">'+webList[i].time+'</p>'+
+                    '</div>'+
+                    '<div class="desc">'+webList[i].desc+'</div>'+
+                    '<a href="'+webList[i].link+'" class="btn" target="_blank">点击进入</a>'+
+                    '</dd>'+
+                    '</dl>';
+                $('#webList').html(moreContentHtml);
+            }
         }
     });
 }
