@@ -38,7 +38,7 @@
                         <li><a href="index.html">首页</a></li>
                         <li><a href="vitae.html">个人简历</a></li>
                         <li><a href="webList.html">个人作品(PC)</a></li>
-                        <li><a href="javascript:void(0);" onclick="common.showPopUpOrder()">个人作品(AE特效)</a></li>
+                        <li><a href="videoList.html">个人作品(AE特效)</a></li>
                     </ul>
                 </div>
             </div>
@@ -93,15 +93,7 @@
                         <a class="more" href="javascript:void(0);">更多</a>
                     </div>
                     <div id="productVideo" class="bannerProduct">
-                        <div class="pic">
-                            <ul>
-                                <li><a href="videoDetail1.html"><img src="	http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo1.jpg" alt=""></a></li>
-                                <li><a href="videoDetail3.html"><img src="	http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo2.jpg" alt=""></a></li>
-                                <li><a href="videoDetail4.html"><img src="	http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo3.jpg" alt=""></a></li>
-                                <li><a href="videoDetail2.html"><img src="	http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo4.jpg" alt=""></a></li>
-                                <li><a href="videoDetail5.html"><img src="	http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo5.jpg" alt=""></a></li>
-                            </ul>
-                        </div>
+                        <div class="pic" id="videoList"></div>
                         <div class="tab">
                             <ul>
                                 <li></li>
@@ -143,8 +135,8 @@
     </div>
 
         <script type="text/javascript" src="js/worldTime.min.js"></script>
-        <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/dataAjax.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript">
             homeData();
             window.onload = function () {
@@ -155,14 +147,6 @@
                     btn : $('#banner .btn div'),
                     speed : 5000,
                     bannerAuto : true
-                });
-                common.productBanner({
-                    tab: $('#productWeb .tab'),
-                    pic: $('#productWeb .pic ul')
-                });
-                common.productBanner({
-                    tab: $('#productVideo .tab'),
-                    pic: $('#productVideo .pic ul')
                 });
             };
             worldTime.init(8,function () {

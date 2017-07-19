@@ -6,9 +6,9 @@ function homeData() {
         dataType: 'json',
         success: function (data) {
             var webList = data.webList;
+            var videoList = data.videoList;
             var vitae = data.vitae;
             for (var i in webList) {
-                console.log(webList[i]);
                 var webListHtml = '';
                 webListHtml +=
                     '<ul>' +
@@ -20,6 +20,26 @@ function homeData() {
                     '</ul>';
                 $('#webList').html(webListHtml);
             }
+            common.productBanner({
+                tab: $('#productWeb .tab'),
+                pic: $('#productWeb .pic ul')
+            });
+            for (var i in videoList) {
+                var videoListHtml = '';
+                videoListHtml +=
+                    '<ul>'+
+                        '<li><a href="'+videoList[0].link+'"><img src="'+videoList[0].img+'" alt=""></a></li>'+
+                        '<li><a href="'+videoList[1].link+'"><img src="'+videoList[1].img+'" alt=""></a></li>'+
+                        '<li><a href="'+videoList[2].link+'"><img src="'+videoList[2].img+'" alt=""></a></li>'+
+                        '<li><a href="'+videoList[3].link+'"><img src="'+videoList[3].img+'" alt=""></a></li>'+
+                        '<li><a href="'+videoList[4].link+'"><img src="'+videoList[4].img+'" alt=""></a></li>'+
+                    '</ul>';
+                $('#videoList').html(videoListHtml);
+            }
+            common.productBanner({
+                tab: $('#productVideo .tab'),
+                pic: $('#productVideo .pic ul')
+            });
             for (var i in vitae) {
                 var personHtml = '';
                 personHtml +=
@@ -256,6 +276,40 @@ function webList() {
                     '</dl>';
                 $('#webList').html(moreContentHtml);
             }
+        },
+        error: function () {
+            alert('数据获取失败！请放入服务器内使用或者到网速好的地方使用！谢谢！');
+        }
+    });
+}
+
+function videoList() {
+    $.ajax({
+        type: 'GET',
+        url: URL,
+        dataType: 'json',
+        success: function (data) {
+            var videoList = data.videoList;
+            var moreContentHtml = '';
+            for (var i in videoList) {
+                moreContentHtml +=
+                    '<dl>'+
+                        '<dt><img src="'+videoList[i].img+'" alt=""></dt>'+
+                        '<dd>'+
+                            '<div class="title">'+videoList[i].title+'</div>'+
+                            '<div class="authorTime clearfix">'+
+                            '<p class="author fl">'+videoList[i].author+'</p>'+
+                            '<p class="time fr">'+videoList[i].time+'</p>'+
+                            '</div>'+
+                            '<div class="desc">'+videoList[i].desc+'</div>'+
+                            '<a href="'+videoList[i].link+'" class="btn" target="_blank">点击进入</a>'+
+                        '</dd>'+
+                    '</dl>';
+                $('#webList').html(moreContentHtml);
+            }
+        },
+        error: function () {
+            alert('数据获取失败！请放入服务器内使用或者到网速好的地方使用！谢谢！');
         }
     });
 }

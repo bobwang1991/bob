@@ -123,7 +123,7 @@
     {
       "title": "Plus Studio公司项目静态网页制作",
       "author": "王之",
-      "time": "2016-05-25",
+      "time": "2016-04-15",
       "desc": "从设计师给到PSD，利用HTML和CSS技术做成静态页面和一些页面动态效果。利用的技术有HTML，CSS，CSS3，Javascript，jQuery，少量ajax等。制作周期：1周以内就完成了。做完以后给到后台生成jsp页面上线。",
       "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productWeb4.jpg",
       "link": "https://bobwang1991.github.io/PStudio/app"
@@ -131,10 +131,60 @@
     {
       "title": "轻走旅游项目静态网页制作",
       "author": "王之",
-      "time": "2016-05-25",
+      "time": "2016-04-25",
       "desc": "这是一款旅游类型的电商网站。从设计师给到PSD，利用HTML和CSS技术做成静态页面和一些页面动态效果。利用的技术有HTML，CSS，CSS3，Javascript，jQuery，少量ajax等。制作周期：1周以内就完成了。做完以后给到后台生成jsp页面上线。",
       "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productWeb5.jpg",
       "link": "https://bobwang1991.github.io/qzTravel/app"
+    },
+    {
+      "title": "湖南海外旅游网站临摹",
+      "author": "王之",
+      "time": "2016-05-20",
+      "desc": "这是一款旅游类型的电商网站。自己从学习到制作了一个一整个网站。",
+      "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productWeb7.jpg",
+      "link": "https://bobwang1991.github.io/hnTravel/app/"
+    }
+  ],
+  "videoList": [
+    {
+      "title": "金柔和",
+      "author": "王之",
+      "time": "2016-12-27",
+      "desc": "一款酒类广告特效视频展示",
+      "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo1.jpg",
+      "link": "videoDetail1.html"
+    },
+    {
+      "title": "奔腾微电脑智能黑晶炉（高清）",
+      "author": "王之",
+      "time": "2016-12-27",
+      "desc": "一款介绍电器的广告特效视频展示",
+      "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo2.jpg",
+      "link": "videoDetail3.html"
+    },
+    {
+      "title": "博科豪华微电脑按摩椅",
+      "author": "王之",
+      "time": "2016-12-27",
+      "desc": "一款按摩椅的广告特效视频展示",
+      "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo3.jpg",
+      "link": "videoDetail4.html"
+    },
+    {
+      "title": "Iphone特效展示",
+      "author": "王之",
+      "time": "2016-12-27",
+      "desc": "一款Iphone特效视频展示",
+      "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo4.jpg",
+      "link": "videoDetail2.html"
+    },
+    {
+      "title": "Logo特效展示",
+      "author": "王之",
+      "time": "2016-12-27",
+      "desc": "一款logo特效视频展示",
+      "img": "http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productVideo5.jpg",
+      "link": "videoDetail5.html"
     }
   ]
 }

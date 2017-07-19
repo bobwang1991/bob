@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/change.css">
-        <link rel="stylesheet" href="css/videoDetail.css">
+        <link rel="stylesheet" href="css/webList.css">
+        <link rel="stylesheet" href="css/scroll.css">
     </head>
     <body>
         <div id="wrap">
@@ -48,21 +49,15 @@
                     <div class="breadNav clearfix">
                         <a href="index.html">首页</a>
                         <span>&gt;&gt;</span>
-                        <a href="javascript:void(0);">全部视频</a>
-                        <span>&gt;&gt;</span>
-                        <span>视频详情</span>
+                        <span>个人作品（AE特效）</span>
                     </div>
-                    <div class="videoCon clearfix">
-                        <div class="left fl">
-                            <div class="title clearfix">
-                                <h2>3D栏包--Logo</h2>
-                                <span>2016-12-27 15:51</span>
-                            </div>
-                            <div class="video">
-                                <embed src='http://player.youku.com/player.php/sid/XMTg4NTkxMDYwNA==/v.swf' allowFullScreen='true' quality='high' width='700' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+                    <div class="list">
+                        <div class="moreList">
+                            <div class="titleHead">AE特效个人项目</div>
+                            <div class="moreContent clearfix" id="demo">
+                                <div class="box" id="webList"></div>
                             </div>
                         </div>
-                        <iframe src="videoNav.html"></iframe>
                     </div>
                 </div>
             </div>
@@ -84,20 +79,17 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="js/zUI.js"></script>
         <script type="text/javascript" src="js/worldTime.min.js"></script>
+        <script type="text/javascript" src="js/zUI.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/dataAjax.js"></script>
+        <script type="text/javascript" src="js/chat.js"></script>
         <script type="text/javascript">
             window.onload = function () {
                 common.shadowBlack();
-                common.banner({
-                    tab : $('#banner .tab'),
-                    pic : $('#banner .pic ul'),
-                    btn : $('#banner .btn div'),
-                    speed : 5000,
-                    bannerAuto : true
-                });
+                common.scrollBars();
             };
+            videoList();
             worldTime.init(8,function () {
                 document.getElementById('time1').innerHTML = this.html;
             });
