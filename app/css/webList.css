@@ -5,22 +5,70 @@
     padding: 30px 0;
 }
 .moreList{
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 .moreList .titleHead {
     font-size: 30px;
     text-align: center;
     line-height: 40px;
+    margin-bottom: 20px;
     color: #ff6600;
 }
-.moreList .moreContent li {
-    float: left;
-    margin: 20px;
-    box-shadow: 0 0 10px #000;
-    border: 1px solid blue;
+.moreList .moreContent {
+    width: 100%;
+    height: 580px;
+    overflow-y: hidden;
 }
-.moreList .moreContent li img{
+.moreList .moreContent dl {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+.moreList .moreContent dl dt {
+    float: left;
     width: 200px;
+    margin-right: 20px;
+}
+.moreList .moreContent dl dt img{
+    width: 200px;
+    border: 2px solid #c19566;
+    border-radius: 5px;
+}
+.moreList .moreContent dl dd {
+    float: left;
+    width: 350px;
+}
+.moreList .moreContent dl dd .title {
+    font-size: 30px;
+    color: #f60;
+    margin: 10px 0;
+}
+.moreList .moreContent dl dd .authorTime {
+    font-size: 12px;
+    color: #767676;
+    margin: 10px 0;
+}
+.moreList .moreContent dl dd .authorTime p.author {
+    color: cornflowerblue;
+    font-weight: 600;
+}
+.moreList .moreContent dl dd .desc {
+    width: 100%;
+    height: 135px;
+    overflow-y: hidden;
+    font-size: 16px;
+    line-height: 26px;
+    word-break: break-all;
+}
+.moreList .moreContent dl dd a.btn {
+    float: right;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    background: #f60;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000;
+    text-shadow: 0 0 10px #000;
 }

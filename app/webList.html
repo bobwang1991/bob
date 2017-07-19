@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/change.css">
         <link rel="stylesheet" href="css/webList.css">
+        <link rel="stylesheet" href="css/scroll.css">
     </head>
     <body>
         <div id="wrap">
@@ -37,7 +38,7 @@
                         <ul class="nav fl">
                             <li><a href="index.html">首页</a></li>
                             <li><a href="vitae.html">个人简历</a></li>
-                            <li><a href="javascript:void(0);" onclick="common.showPopUpOrder()">个人作品(PC)</a></li>
+                            <li><a href="webList.html">个人作品(PC)</a></li>
                             <li><a href="javascript:void(0);" onclick="common.showPopUpOrder()">个人作品(AE特效)</a></li>
                         </ul>
                     </div>
@@ -53,14 +54,23 @@
                     <div class="list">
                         <div class="moreList">
                             <div class="titleHead">PC个人项目</div>
-                            <div class="moreContent clearfix">
-                                <ul>
-                                    <li><a href="javascript:void(0);"><img src="images/productWeb1.jpg" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="images/productWeb2.jpg" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="images/productWeb3.jpg" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="images/productWeb4.jpg" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="images/productWeb5.jpg" alt=""></a></li>
-                                </ul>
+                            <div class="moreContent clearfix" id="demo">
+                                <div class="box">
+                                    <dl>
+                                        <dt><a href="javascript:void(0);"><img src="http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/productWeb1.jpg" alt=""></a></dt>
+                                        <dd>
+                                            <div class="title">小米官网制作</div>
+                                            <div class="authorTime clearfix">
+                                                <p class="author fl">王之</p>
+                                                <p class="time fr">2016-06-05</p>
+                                            </div>
+                                            <div class="desc">
+                                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                                            </div>
+                                            <a href="#" class="btn">点击进入</a>
+                                        </dd>
+                                    </dl>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,11 +95,13 @@
         </div>
 
         <script type="text/javascript" src="js/worldTime.min.js"></script>
+        <script type="text/javascript" src="js/zUI.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/chat.js"></script>
         <script type="text/javascript">
             window.onload = function () {
                 common.shadowBlack();
+                common.scrollBars();
             };
             worldTime.init(8,function () {
                 document.getElementById('time1').innerHTML = this.html;
