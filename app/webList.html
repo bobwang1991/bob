@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/change.css">
         <link rel="stylesheet" href="css/webList.css">
         <link rel="stylesheet" href="css/scroll.css">
     </head>
@@ -61,26 +60,12 @@
                     </div>
                 </div>
             </div>
-            <div id="footer">
-                <div class="center">
-                    <div class="qrChat"><img src="http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/qrChat.jpg" alt=""></div>
-                    <div class="server">
-                        服务热线：180-1718-7988（个人）服务时间9:00-19:00
-                    </div>
-                    <div class="server">
-                        Copyright © 2015-<script language="JavaScript">var now = new Date();var year = now.getFullYear();document.write(year);</script> Bob 上海Bob出版社
-                    </div>
-                </div>
-            </div>
-            <div class="blackShadow"></div>
-            <div id="box1" class="popUp">
-                <i onclick="common.hidePopUpFinish()">&times;</i>
-                暂未开放，请敬请期待！
-            </div>
+            <div id="footer"></div>
         </div>
 
         <script type="text/javascript" src="js/worldTime.min.js"></script>
         <script type="text/javascript" src="js/zUI.js"></script>
+        <script type="text/javascript" src="js/footer.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/dataAjax.js"></script>
         <script type="text/javascript" src="js/chat.js"></script>
@@ -89,6 +74,7 @@
                 common.shadowBlack();
                 common.scrollBars();
             };
+            footer();
             webList();
             worldTime.init(8,function () {
                 document.getElementById('time1').innerHTML = this.html;
