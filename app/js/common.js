@@ -192,3 +192,8 @@ var common = {
         boxDom.style.top = ctop + 'px';
     }
 };
+(function () {
+    window.onresize = function () {
+        window.location.reload();
+    };
+})();

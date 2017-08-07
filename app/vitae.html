@@ -15,32 +15,13 @@
             <div id="header">
                 <div class="top">
                     <div class="center">
-                        <div class="left fl">
-                            <div class="txt name fl">姓名：王之</div>
-                            <div class="txt area fl">地区：<span>上海</span></div>
-                            <div class="txt phone fl">联系方式：<span>180-1718-7988</span></div>
-                            <div class="txt mail fl">email：<span>bob_1991@qq.com</span></div>
-                        </div>
+                        <div class="left fl" id="topLieft"></div>
                         <div class="right fr">
-                            <p id="time1">2016-12-21 17:00:00</p>
+                            <p id="time1"></p>
                         </div>
                     </div>
                 </div>
-                <div class="navLogo">
-                    <div class="center">
-                        <div class="logo fl">
-                            <a href="index.html">
-                                <img src="http://bob1991-1253674698.cossh.myqcloud.com/personalWeb/logo.png" alt="">
-                            </a>
-                        </div>
-                        <ul class="nav fl">
-                            <li><a href="index.html">首页</a></li>
-                            <li><a href="vitae.html">个人简历</a></li>
-                            <li><a href="webList.html">个人作品(PC)</a></li>
-                            <li><a href="videoList.html">个人作品(AE特效)</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="navLogo" id="nav"></div>
             </div>
             <div id="main">
                 <div class="center">
@@ -90,6 +71,7 @@
             worldTime.init(8,function () {
                 document.getElementById('time1').innerHTML = this.html;
             });
+            header();
             footer();
             vitaeData();
         </script>
