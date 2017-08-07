@@ -13,7 +13,9 @@ function header() {
                 '<div class="txt mail fl">email：<span>'+topInfo.mail+'</span></div> ';
             $('#topLieft').html(topNav);
             for (var i in navHeader) {
-                var nav =
+                var nav = '';
+                var navUlLi = '';
+                nav =
                     '<div class="center">'+
                         '<div class="logo fl">'+
                             '<a href="index.html">'+
@@ -27,15 +29,12 @@ function header() {
                             '<li><a href="'+navHeader[3].Link+'">'+navHeader[3].title+'</a></li>'+
                         '</ul>'+
                     '</div>';
-                $('#nav').html(nav);
-            }
-            for (var i in navHeader) {
-                var navUlLi = '';
                 for (var j=0 ; j<navHeader[i].length ; j++) {
                     navUlLi =
                         '<li><a href="'+navHeader[j].Link+'">'+navHeader[j].title+'</a></li>';
                     $('#navUl').html(navUlLi);
                 }
+                $('#nav').html(nav);
             }
         },
         error: function () {

@@ -43,7 +43,7 @@ function homeData() {
             for (var i in vitae) {
                 // 首页个人评价截取
                 var str = vitae[1]['contentArr'];
-                str = str.substr(0, str.indexOf('中'));
+                str = str.substr(0, str.indexOf('解'));
                 var personHtml = '';
                 personHtml +=
                     '<dt><img src="'+vitae[0].personImg+'" alt=""></dt>'+
@@ -53,7 +53,7 @@ function homeData() {
                         '<p class="name">出生年月：<span>'+vitae[0].birthDay+'</span></p>'+
                         '<p class="name">e-mail：<span>'+vitae[0].mail+'</span></p>'+
                         '<p class="name">'+vitae[1].titleName+'：</p>'+
-                        '<p class="name personal">'+str+'</p>'+
+                        '<p class="name personal">'+str+'...'+'</p>'+
                     '</dd>';
                 $('#vitae').html(personHtml);
             }
